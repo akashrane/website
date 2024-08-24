@@ -20,22 +20,550 @@
         </div>
     </nav>
     <nav id="akash-nav">
+        <script>src="script.js"</script>
         <div class="logo">Akash Rane</div>
         <div class="akash-menu">
-        <div class="akash-icon" onclick="ToggleMenu()">
+        <div class="akash-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <div class="menu-links">
-            <li><a href = "about" onclick="ToggleMenu()">About</a></li>
-            <li><a href = "experience" onclick="ToggleMenu()">Experience</a></li>
-            <li><a href = "prjects" onclick="ToggleMenu()">Projects</a></li>
-            <li><a href = "contact" onclick="ToggleMenu()">Contact</a></li>
+            <li><a href = "about" onclick="toggleMenu()">About</a></li>
+            <li><a href = "experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href = "prjects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href = "contact" onclick="toggleMenu()">Contact</a></li>
         </div>
         </div>
-
     </nav>
-    <script>src="script.js"</script>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets\pic_1.png" alt="Akash Rane">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1>Akash Rane</h1>
+            <p class="section__text__p2">Computer Science Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/Akash_Rane_Resume _V1.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My linkedin Profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/akashrane/'">
+
+                <img 
+                src="./assets/github.png" 
+                alt="My github Profile"
+                class="icon"
+                onclick="location.href='https://www.github.com/akashrane'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/akash_portfolio_picture.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>1.5 years <br />Computer Science Engineer & Buisness Intern</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Bachelors in Computer Engineering<br/>
+                    Master's in Cumputer Science (Pursuing)</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I’m Akash Rane, a Computer Science master’s student passionate about Python, JavaScript, and emerging technologies like data analysis, neural networks, and machine learning. With a strong foundation in programming and problem-solving, I’ve worked on diverse projects, including a neural network-based face recognition system, data analysis pipelines, and dynamic web applications. I thrive in challenging environments that push me to think critically and innovate, and I bring strong teamwork and communication skills to every project. Beyond coding, I’m passionate about photography and love exploring the intersection of creativity and technology. I’m currently seeking opportunities to apply my skills in real-world scenarios, particularly through internships where I can continue to learn, grow, and contribute to impactful projects.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Thecnical skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">programming Language</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++,C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML, CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JSON, JAVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Database Management</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Influx DB</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Visualisation</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node - Red</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Influx DB</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Grafana</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+
+        </div>
+        <div class="details-container">
+            <h2 class="experience-sub-title">Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Seaborn</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sklearn</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Keras</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              
+            </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="Publications">
+        <p class="section__text__p1">My Publications and Projects</p>
+        <h1 class="title">Publications</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Publication1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Application for Real Time Object Measurement</h2>
+              <p>International Journal of Advanced Research in Science, Communication and Technology<br>Year:2022</p>
+
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.ijarsct.co.in/Paper5228.pdf'"
+                >
+                Download Paper
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/akashrane/Object-Detection_with_Aruco_Markers'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">A Review on Object Measurement Techniques</h2>
+              <p>International Journal of Advanced Research in Science, Communication and Technology<br>Year:2022</p>
+
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://ijarsct.co.in/Paper3682.pdf'"
+                >
+                  Download Paper
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/akashrane/Object-Detection_with_Aruco_Markers'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">An Experimental Assessment of Deep Learning on Highway Driving</h2>
+              <p>Journal of Science and technology at National Conference on Cognitive Computing<br>Year:2021</p>
+
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://drive.google.com/file/d/1mRRszX2Ef1VCk2qxDmEQEEr6hiFtQ8pF/view?usp=sharing'"
+                >
+                  Download Paper
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://drive.google.com/file/d/1mRRszX2Ef1VCk2qxDmEQEEr6hiFtQ8pF/view?usp=sharing'"
+                >
+                  Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="project-1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Automated Operational Analytics and Reporting</h2>
+              <p>A python application which will retrive the data from servers and do automated EDA and create PDF reports early morning printed automatically to the factory owners.</p>
+
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.ijarsct.co.in/Paper5228.pdf'"
+                >
+                See Graphs in Action
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Prediction Model of Exhaust Air Temperature</h2>
+              <p>Engineered a neural network model with TensorFlow and Keras to accurately predict exhaust air temperature, optimizing performance via mean squared error minimization with the Adam optimizer. Enabled real-time user input for precise predictions.</p>
+
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/akashrane/ML_Model_to_predict_Exhaust_Air_Temperature'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Real-Time Object Measurement Application </h2>
+              <p>Created a Python application using OpenCV and Aruco Markers for real-time measurement of object dimensions, with enhanced accuracy achieved through image segmentation.</p>
+
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/akashrane/Object-Detection_with_Aruco_Markers/blob/main/object_detector.py'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:akashrane2609@gmail.com">akashrane2609@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/akashrane/">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".akash-icon");
+            menu.classList.toggle("Open");
+            icon.classList.toggle("Open");
+        }
+    </script>
 </body>
 </html>
